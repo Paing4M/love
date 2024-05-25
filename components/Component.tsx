@@ -52,7 +52,7 @@ const Component = () => {
 					<button
 						style={{
 							background: success ? '#ffff80' : '',
-							color: success ? '#ffff80' : '',
+							color: success ? '#000' : '',
 						}}
 						onClick={() => setSuccess(true)}
 						className='my-button yes mb-[40px] xs:mb-0'
