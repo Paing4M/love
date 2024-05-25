@@ -19,14 +19,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
-			<body
-				className={
-					roboto.className +
-					' flex items-center justify-center h-screen bg-[#070F2B]'
-				}
-			>
-				{children}
-			</body>
+			<body className={roboto.className}>{children}</body>
 		</html>
 	)
 }

@@ -29,10 +29,10 @@ const Component = () => {
 	}
 
 	return (
-		<div className='flex items-center justify-center h-screen bg-[#070F2B]'>
+		<div className='flex items-center justify-center h-screen bg-[#070F2B] mx-auto w-full'>
 			<div
 				ref={containerRef}
-				className='p-8 bg-white backdrop-blur-md rounded-lg container_ref w-[500px] sm:w-[550px]  shadow-md flex flex-col relative mx-auto'
+				className='p-8 bg-white backdrop-blur-md rounded-lg container_ref w-full max-w-[550px]  shadow-md flex flex-col relative '
 				style={{ position: 'relative' }}
 			>
 				<Image
@@ -49,10 +49,10 @@ const Component = () => {
 						: 'Ma Ma Kwi, Do you love me?'}
 				</h4>
 
-				<div className='flex items-center justify-between mt-10'>
+				<div className='flex flex-col xs:flex-row items-center justify-between mt-10'>
 					<button
 						onClick={() => setSuccess(true)}
-						className='my-button yes'
+						className='my-button yes mb-[40px] xs:mb-0'
 					>
 						Yes. I love you
 					</button>
@@ -60,7 +60,7 @@ const Component = () => {
 						onClick={randomPosition}
 						onMouseEnter={randomPosition}
 						ref={btnRef}
-						className='no bottom-[31px] bg-red-400  right-[31px]'
+						className='no bottom-[20px] xs:bottom-[31px] bg-red-400 right-[50%] translate-x-[50%] xs:translate-x-0 xs:right-[31px]'
 						style={{ position: 'absolute' }}
 					>
 						No
