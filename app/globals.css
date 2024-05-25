@@ -44,6 +44,7 @@
 	content: '';
 	background: conic-gradient(transparent 270deg, #9290c3, transparent);
 	position: absolute;
+	overflow: hidden;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -54,6 +55,7 @@
 
 .my-button::after {
 	content: 'Yes. I love you';
+	overflow: hidden;
 	display: flex;
 	align-items: center;
 	justify-content: center;
