@@ -67,6 +67,10 @@
 	width: calc(100% - 2 * var(--offset));
 }
 
+.yes:active {
+	background: #9290c3;
+}
+
 .yes:hover {
 	background: #9290c3;
 	box-shadow: 0 0 100px #1b1a55;

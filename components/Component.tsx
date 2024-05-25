@@ -70,7 +70,7 @@ const Component = () => {
 					)}
 				</div>
 
-				{success && <Sparkle />}
+				{success && <Sparkle count={500} />}
 			</div>
 		</div>
 	)
