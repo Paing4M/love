@@ -51,6 +51,10 @@ const Component = () => {
 
 				<div className='flex flex-col xs:flex-row items-center justify-between mt-10'>
 					<button
+						style={{
+							background: success ? '#ffff80' : '',
+							color: success ? '#333' : '',
+						}}
 						onClick={() => setSuccess(true)}
 						className='my-button yes mb-[40px] xs:mb-0'
 					>

@@ -42,7 +42,7 @@
 
 .my-button::before {
 	content: '';
-	background: conic-gradient(transparent 270deg, #9290c3, transparent);
+	background: conic-gradient(transparent 270deg, #ffff80, transparent);
 	position: absolute;
 	overflow: hidden;
 	top: 50%;
@@ -67,13 +67,11 @@
 	width: calc(100% - 2 * var(--offset));
 }
 
+.yes:hover,
 .yes:active {
-	background: #9290c3;
-}
-
-.yes:hover {
-	background: #9290c3;
-	box-shadow: 0 0 100px #1b1a55;
+	color: #000;
+	background: #ffff80;
+	box-shadow: 0 0 100px #ffff80;
 }
 
 a {
