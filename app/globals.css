@@ -35,8 +35,9 @@
 	/* background: transparent; */
 	/* border: 1px solid #1b1a55;
 	color: black; */
-	width: fit-content;
-	padding: 0 4rem;
+	width: 130px;
+	text-align: center;
+	/* padding: 0 4rem; */
 }
 
 .my-button::before {

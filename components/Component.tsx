@@ -60,7 +60,7 @@ const Component = () => {
 						onClick={randomPosition}
 						onMouseEnter={randomPosition}
 						ref={btnRef}
-						className='no bottom-[20px] xs:bottom-[31px] bg-red-400 right-[50%] translate-x-[50%] xs:translate-x-0 xs:right-[31px]'
+						className='no bottom-[20px] xs:bottom-[31px] bg-red-400 right-[50%] translate-x-[50%] xs:translate-x-0 xs:right-[31px] z-50'
 						style={{ position: 'absolute' }}
 					>
 						No
