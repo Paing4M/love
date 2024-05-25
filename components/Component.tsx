@@ -29,7 +29,7 @@ const Component = () => {
 	}
 
 	return (
-		<div className='flex items-center justify-center h-screen bg-[#070F2B] mx-auto w-full'>
+		<div className='flex items-center justify-center h-screen bg-[#070F2B] mx-auto w-screen relative overflow-hidden'>
 			<div
 				ref={containerRef}
 				className='p-8 bg-white backdrop-blur-md rounded-lg container_ref w-full max-w-[550px]  shadow-md flex flex-col relative '
