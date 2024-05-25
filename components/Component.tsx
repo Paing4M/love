@@ -32,7 +32,7 @@ const Component = () => {
 		<div className='flex items-center justify-center h-screen bg-[#070F2B]'>
 			<div
 				ref={containerRef}
-				className='p-8 bg-white backdrop-blur-md rounded-lg container_ref w-[480px] sm:w-[550px]  shadow-md flex flex-col relative'
+				className='p-8 bg-white backdrop-blur-md rounded-lg container_ref w-[500px] sm:w-[550px]  shadow-md flex flex-col relative mx-auto'
 				style={{ position: 'relative' }}
 			>
 				<Image
