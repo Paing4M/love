@@ -2,32 +2,84 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.container_ref {
+	position: relative !important;
+	background: rgba(255, 255, 255, 0.05);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	color: #fff;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.my-button,
+.no {
+	--offset: 3px;
+	color: #fff;
+	border-radius: 50px;
+	position: relative;
+	height: 40px;
+	width: 200px;
+	max-width: 100%;
+	overflow: hidden;
+	opacity: 0.9;
+	/* -webkit-box-shadow: 1px 3px 12px #21253a, -1px -2px 5px 0px #8593e8;
+	box-shadow: 1px 3px 12px #21253a, -1px -1px 10px 0px #8593e8; */
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.yes {
+	background-color: #535c91;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.no {
+	/* background: transparent; */
+	/* border: 1px solid #1b1a55;
+	color: black; */
+	width: fit-content;
+	padding: 0 4rem;
+}
+
+.my-button::before {
+	content: '';
+	background: conic-gradient(transparent 270deg, #9290c3, transparent);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	aspect-ratio: 1;
+	width: 100%;
+	animation: rotate 2s linear infinite;
+}
+
+.my-button::after {
+	content: 'Yes. I love you';
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: inherit;
+	border-radius: inherit;
+	position: absolute;
+	inset: var(--offset);
+	height: calc(100% - 2 * var(--offset));
+	width: calc(100% - 2 * var(--offset));
+}
+
+.yes:hover {
+	background: #9290c3;
+	box-shadow: 0 0 100px #1b1a55;
+}
+
+a {
+	text-decoration: none;
+}
+
+@keyframes rotate {
+	from {
+		transform: translate(-50%, -50%) scale(1.4) rotate(0turn);
+	}
+
+	to {
+		transform: translate(-50%, -50%) scale(1.4) rotate(1turn);
+	}
 }
