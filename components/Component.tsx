@@ -17,11 +17,11 @@ const Component = () => {
 			const containerRect = container.getBoundingClientRect()
 			const buttonRect = button.getBoundingClientRect()
 
-			const maxLeft = containerRect.width - buttonRect.width
+			const maxLeft = containerRect.width - buttonRect.width - 60
 			const maxTop = containerRect.height - buttonRect.height
 
-			const randomLeft = Math.floor(Math.random() * maxLeft) + 1
-			const randomTop = Math.floor(Math.random() * maxTop) + 1
+			const randomLeft = Math.floor(Math.random() * maxLeft)
+			const randomTop = Math.floor(Math.random() * maxTop)
 
 			button.style.left = `${randomLeft}px`
 			button.style.top = `${randomTop}px`
@@ -29,11 +29,10 @@ const Component = () => {
 	}
 
 	return (
-		<div className='flex items-center justify-center h-screen bg-[#070F2B]  w-screen relative overflow-hidden'>
+		<div className='flex items-center justify-center h-screen bg-[#070F2B] w-full  relative overflow-hidden'>
 			<div
 				ref={containerRef}
-				className='p-8 bg-white backdrop-blur-md rounded-lg container_ref w-full max-w-[550px]  shadow-md flex flex-col relative '
-				style={{ position: 'relative' }}
+				className='p-8  backdrop-blur-md rounded-lg container_ref w-full max-w-[550px] shadow-md flex flex-col  '
 			>
 				<Image
 					className='mx-auto'
@@ -53,7 +52,7 @@ const Component = () => {
 					<button
 						style={{
 							background: success ? '#ffff80' : '',
-							color: success ? '#333' : '',
+							color: success ? '#ffff80' : '',
 						}}
 						onClick={() => setSuccess(true)}
 						className='my-button yes mb-[40px] xs:mb-0'
