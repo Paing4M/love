@@ -44,7 +44,6 @@
 	content: '';
 	background: conic-gradient(transparent 270deg, #9290c3, transparent);
 	position: absolute;
-	border-radius: 50px;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -59,7 +58,7 @@
 	align-items: center;
 	justify-content: center;
 	background: inherit;
-	border-radius: inherit;
+	border-radius: 50px;
 	position: absolute;
 	inset: var(--offset);
 	height: calc(100% - 2 * var(--offset));

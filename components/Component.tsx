@@ -20,8 +20,8 @@ const Component = () => {
 			const maxLeft = containerRect.width - buttonRect.width
 			const maxTop = containerRect.height - buttonRect.height
 
-			const randomLeft = Math.floor(Math.random() * maxLeft) + 10
-			const randomTop = Math.floor(Math.random() * maxTop) + 10
+			const randomLeft = Math.floor(Math.random() * maxLeft) + 1
+			const randomTop = Math.floor(Math.random() * maxTop) + 1
 
 			button.style.left = `${randomLeft}px`
 			button.style.top = `${randomTop}px`
