@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+	/* font-family: var(--roboto-font); */
+}
+
 .container_ref {
 	position: relative !important;
 	background: rgba(255, 255, 255, 0.05);
@@ -40,6 +44,7 @@
 	text-align: center;
 	position: absolute;
 	padding: 0 3rem;
+	transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .my-button::before {

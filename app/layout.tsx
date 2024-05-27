@@ -4,7 +4,8 @@ import './globals.css'
 
 const roboto = Roboto({
 	subsets: ['latin'],
-	weight: '400',
+	weight: ['500', '700', '900'],
+	variable: '--roboto-font',
 })
 
 export const metadata: Metadata = {
@@ -22,7 +23,9 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
-			<body className={roboto.className}>{children}</body>
+			<body className={roboto.variable} suppressHydrationWarning>
+				{children}
+			</body>
 		</html>
 	)
 }
